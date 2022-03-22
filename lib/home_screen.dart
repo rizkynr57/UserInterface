@@ -8,16 +8,25 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.white, Colors.lightBlue, Colors.purple],
-            ),
-          ),
+          // decoration: BoxDecoration(
+          //   gradient: LinearGradient(
+          //     colors: [Colors.white, Colors.lightBlue, Colors.purple],
+          //   ),
+          // ),
           child: ListView(
             children: [
               Container(
+                padding: EdgeInsets.all(15),
                 width: 400,
                 height: 210,
+                child: Container(
+                  alignment: Alignment.topLeft,
+                  child: Icon(
+                    Icons.app_settings_alt_rounded,
+                    color: Colors.green,
+                    size: 30.0,
+                  ),
+                ),
                 decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("assets/img/tema.jpg"),
