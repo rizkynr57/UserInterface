@@ -1,35 +1,169 @@
 import 'package:flutter/material.dart';
-import 'package:pkl/menu1_screen.dart';
-import 'package:pkl/menu2_screen.dart';
+import 'package:ujikom/menu1_screen.dart';
+import 'package:ujikom/menu2_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: Colors.lightBlueAccent,
-        alignment: Alignment.center,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              child: Text(
-                'Home',
-                style: TextStyle(color: Colors.white, fontSize: 20),
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.white, Colors.lightBlue, Colors.purple],
+            ),
+          ),
+          child: ListView(
+            children: [
+              Container(
+                width: 400,
+                height: 210,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/img/tema.jpg"),
+                      fit: BoxFit.cover),
+                ),
               ),
-              margin: EdgeInsets.all(16),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context, rootNavigator: false).push(
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => MenuScreen2(),
-                  ),
-                );
-              },
-              child: Text("Pindah ke Menu 2"),
-            ),
-          ],
+              Padding(padding: EdgeInsets.only(top: 27)),
+              Container(
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      width: 350,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white),
+                      child: Container(
+                        width: 300,
+                        height: 50,
+                        color: Colors.green,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.access_alarm_rounded,
+                              size: 30,
+                              color: Colors.yellowAccent,
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 15)),
+                            Text(
+                              "Data Supplier",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 7)),
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      width: 350,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white),
+                      child: Container(
+                        width: 300,
+                        height: 50,
+                        color: Colors.lightBlue,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.access_alarm_rounded,
+                              size: 30,
+                              color: Colors.yellowAccent,
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 15)),
+                            Text(
+                              "Data Customer",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 7)),
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      width: 350,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white),
+                      child: Container(
+                        width: 300,
+                        height: 50,
+                        color: Colors.red,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.access_alarm_rounded,
+                              size: 30,
+                              color: Colors.yellowAccent,
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 15)),
+                            Text(
+                              "Data Barang Masuk",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 7)),
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      width: 350,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white),
+                      child: Container(
+                        width: 300,
+                        height: 50,
+                        color: Colors.yellow,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.notifications_rounded,
+                              size: 30,
+                              color: Colors.blueAccent,
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 15)),
+                            Text(
+                              "Data Barang Keluar",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

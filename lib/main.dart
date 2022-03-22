@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pkl/main_screen.dart';
+import 'package:ujikom/main_screen.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
 void main() {
@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
         navigateRoute: MainScreen(),
         duration: 4000,
         imageSize: 130,
-        imageSrc: "assets/img/logologo.png",
+        imageSrc: "assets/img/logo.jpg",
         backgroundColor: Colors.white,
-        text: "Pkl App",
+        text: "Pengadaan Barang",
         textType: TextType.TyperAnimatedText,
         textStyle: TextStyle(
           fontSize: 30.0,
