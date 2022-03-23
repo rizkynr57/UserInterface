@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ujikom/menu1_screen.dart';
 import 'package:ujikom/menu2_screen.dart';
+import 'data_customer.dart';
+import 'data_supplier.dart';
+import 'barang_masuk.dart';
+import 'barang_keluar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
