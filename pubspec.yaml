@@ -60,6 +60,7 @@ flutter:
   assets:
     - assets/img/logologo.png
     - assets/img/logo.jpg
+    - assets/img/profile.jpg
     - assets/img/tema.jpg
   #   - images/a_dot_ham.jpeg
 

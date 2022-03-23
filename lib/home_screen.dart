@@ -8,11 +8,6 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          // decoration: BoxDecoration(
-          //   gradient: LinearGradient(
-          //     colors: [Colors.white, Colors.lightBlue, Colors.purple],
-          //   ),
-          // ),
           child: ListView(
             children: [
               Container(
