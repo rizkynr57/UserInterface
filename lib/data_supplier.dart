@@ -33,6 +33,7 @@ class DataSupplier extends StatelessWidget {
                   child: DataTable(
                     columns: [
                       DataColumn(label: Text("No")),
+                      DataColumn(label: Text("Kode)),
                       DataColumn(label: Text("Nama")),
                       DataColumn(label: Text("Alamat")),
                       DataColumn(label: Text("No. Telepon")),
@@ -42,6 +43,7 @@ class DataSupplier extends StatelessWidget {
                       DataRow(
                         cells: [
                           DataCell(Text("1")),
+                          DataCell(Text("SP9383")),
                           DataCell(Text("RzQ")),
                           DataCell(Text("Bandung")),
                           DataCell(Text("9383031")),
