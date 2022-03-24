@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-// import '../models/artikel_model.dart';
+import '../models/supplier_model.dart';
 
 class SupplierService {
   static Future<SupplierModel> fetchArtikelData() async {
