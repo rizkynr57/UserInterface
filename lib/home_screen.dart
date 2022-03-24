@@ -2,10 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:ujikom/about_screen.dart';
-import 'package:ujikom/data_supplier.dart';
 import 'package:ujikom/data_customer.dart';
 import 'package:ujikom/barang_masuk.dart';
 import 'package:ujikom/barang_keluar.dart';
+import 'data_supplier.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             children: [
               Container(
                 width: 400,
-                height: 210,
+                height: 180,
                 child: Column(
                   children: [
                     Padding(padding: EdgeInsets.only(top: 50)),
@@ -44,10 +44,10 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(
-                  //   bottomLeft: Radius.circular(50),
-                  //   bottomRight: Radius.circular(50),
-                  // ),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50),
+                  ),
                   image: DecorationImage(
                       image: AssetImage("assets/img/tema.jpg"),
                       fit: BoxFit.cover),
@@ -57,44 +57,52 @@ class HomeScreen extends StatelessWidget {
               Container(
                 child: Column(
                   children: [
-                    Container(
-                      padding: EdgeInsets.all(15),
-                      width: 350,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 1,
-                            blurRadius: 2,
-                            offset: Offset(0, 3),
-                          ),
-                        ],
-                      ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(
+                          context,
+                        ).push(MaterialPageRoute(
+                            builder: (BuildContext context) => DataSupplier()));
+                      },
                       child: Container(
-                        width: 300,
-                        height: 50,
-                        color: Colors.green,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.person,
-                              size: 50,
-                              color: Colors.grey,
-                            ),
-                            Padding(padding: EdgeInsets.only(left: 15)),
-                            Text(
-                              "Data Supplier",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontStyle: FontStyle.italic),
+                        padding: EdgeInsets.all(15),
+                        width: 350,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 1,
+                              blurRadius: 2,
+                              offset: Offset(0, 3),
                             ),
                           ],
+                        ),
+                        child: Container(
+                          width: 300,
+                          height: 50,
+                          color: Colors.green,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.person,
+                                size: 50,
+                                color: Colors.grey,
+                              ),
+                              Padding(padding: EdgeInsets.only(left: 15)),
+                              Text(
+                                "Data Supplier",
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -140,7 +148,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 7)),
+                    Padding(padding: EdgeInsets.only(top: 15)),
                     Container(
                       padding: EdgeInsets.all(15),
                       width: 350,
