@@ -1,86 +1,61 @@
 import 'dart:ui';
 import 'home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-
-class BarangKeluar extends StatelessWidget {
+​
+class DataBarangKeluar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: ListView(
-          // scrollDirection: Axis.horizontal,
           children: [
             Container(
-              alignment: Alignment.center,
               width: 400,
               height: 200,
               child: Container(
-                child: Row(
-                  children: [
-                    Container(
-                      alignment: Alignment.topLeft,
-                      child: Builder(
-                        builder: (context) => ElevatedButton(
-                            child: Icon(
-                              Icons.arrow_back_rounded,
-                              color: Colors.yellowAccent,
-                              size: 30,
-                            ),
-                            onPressed: () async {
-                              var result = await Navigator.push<String>(
-                                context,
-                                CupertinoPageRoute(
-                                  builder: (context) => HomeScreen(),
-                                ),
-                              );
-                            }),
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.only(left: 100),
-                      child: Text(
-                        "Data Supplier",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w700),
-                      ),
-                    )
-                  ],
-                ),
+                alignment: Alignment.center,
+                child: Text("Data Barang Keluar"),
               ),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                    colors: [Colors.blue, Colors.black, Colors.blue]),
-              ),
-            ),
-            DataTable(
-              columns: [
-                DataColumn(label: Text("No")),
-                DataColumn(label: Text("Customer")),
-                DataColumn(label: Text("Nama")),
-                DataColumn(label: Text("Jumlah Pengiriman")),
-                DataColumn(label: Text("Harga")),
-                DataColumn(label: Text("Tujuan")),
-                DataColumn(label: Text("Tanggal Keluar")),
-                // DataColumn(label: Text("Perusahaan")),
-              ],
-              rows: [
-                DataRow(
-                  cells: [
-                    DataCell(Text("1")),
-                    DataCell(Text("SP08292")),
-                    DataCell(Text("Susu")),
-                    DataCell(Text("10")),
-                    DataCell(Text("20.000")),
-                    DataCell(Text("Samarinda")),
-                    DataCell(Text("20 Januari")),
-                    // DataCell(Text("PT Belum Pasti")),
+                  colors: <Color> [
+                    Colors.red,
+                    Colors.white,
+                    Colors.red,
                   ],
                 ),
-              ],
-            )
+              ),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: DataTable(
+                    columns: [
+                      DataColumn(label: Text("No")),
+                      DataColumn(label: Text("Nama Customer")),
+                      DataColumn(label: Text("Nama Barang")),
+                      DataColumn(label: Text("Jumlah Keluar"),
+                      DataColumn(label: Text("Harga")),
+                      DataColumn(label: Text("Tujuan")),
+                      DataColumn(label: Text("Tanggal Kirim")),
+                    ],
+                    rows: [
+                      DataRow(
+                        cells: [
+                          DataCell(Text("1")),
+                          DataCell(Text("Sean")),
+                          DataCell(Text("Sweeter")),
+                          DataCell(Text("5")),
+                          DataCell(Text("300.000")),
+                          DataCell(Text("Samarinda")),
+                          DataCell(Text("20 Februari")),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+            ),
           ],
         ),
       ),
