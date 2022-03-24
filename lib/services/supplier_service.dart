@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 // import '../models/artikel_model.dart';
 
 class SupplierService {
-  static Future<ArtikelModel> fetchArtikelData() async {
+  static Future<SupplierModel> fetchArtikelData() async {
     final response = await http
         .get(Uri.parse('https://rizkyn-ujikom.herokuapp.com/api/supplier'));
 
