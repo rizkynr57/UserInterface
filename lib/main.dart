@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ujikom/main_screen.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
+import 'profile_screen.dart';
 import 'home_screen.dart';
 
 void main() {
-  runApp(ProfileScreen());
+  runApp(HomeScreen());
 }
 
 class MyApp extends StatelessWidget {

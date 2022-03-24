@@ -37,14 +37,19 @@ class DataSupplier extends StatelessWidget {
                             }),
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.only(left: 100),
-                      child: Text(
-                        "Data Supplier",
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w700),
+                    GestureDetector(
+                      onTap: () {
+                        DataSupplier();
+                      },
+                      child: Container(
+                        padding: EdgeInsets.only(left: 100),
+                        child: Text(
+                          "Data Supplier",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w700),
+                        ),
                       ),
                     )
                   ],
