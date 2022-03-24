@@ -33,23 +33,19 @@ class DataBarangMasuk extends StatelessWidget {
                   child: DataTable(
                     columns: [
                       DataColumn(label: Text("No")),
+                      DataColumn(label: Text("Nama Supplier")),
                       DataColumn(label: Text("Nama Barang")),
-                      DataColumn(label: Text("Jenis Barang")),
-                      DataColumn(label: Text("Stok Barang")),
-                      DataColumn(label: Text("Harga Beli")),
-                      DataColumn(label: Text("Harga Jual")),
-                      DataColumn(label: Text("Satuan")),
+                      DataColumn(label: Text("Jumlah Masuk")),
+                      DataColumn(label: Text("Tanggal Masuk")),
                     ],
                     rows: [
                       DataRow(
                         cells: [
                           DataCell(Text("1")),
+                          DataCell(Text("Renata")),
                           DataCell(Text("Iphone")),
-                          DataCell(Text("Elektronik")),
                           DataCell(Text("98")),
-                          DataCell(Text("5.900.000")),
-                          DataCell(Text("6.500.000")),
-                          DataCell(Text("Unit")),
+                          DataCell(Text("14 Januari")),
                         ],
                       ),
                     ],
