@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+
+import '../controllers/barangController.dart';
 
 class Barang extends StatelessWidget {
   @override
@@ -53,7 +56,7 @@ class Barang extends StatelessWidget {
                     ],
                   ),
                 ),
-            ),
+              ),
           ],
         ),
       ),

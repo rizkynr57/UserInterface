@@ -1,11 +1,12 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:ujikom/frontend/about_screen.dart';
+import 'package:get/get.dart';
+import 'package:ujikom/frontend/data_supplier.dart';
 import 'package:ujikom/frontend/data_customer.dart';
+import 'package:ujikom/frontend/barang.dart';
 import 'package:ujikom/frontend/barang_masuk.dart';
 import 'package:ujikom/frontend/barang_keluar.dart';
-import 'data_supplier.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -58,10 +59,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.of(
-                          context,
-                        ).push(MaterialPageRoute(
-                            builder: (BuildContext context) => DataSupplier()));
+                        Get.to(DataSupplier());
                       },
                       child: Container(
                         padding: EdgeInsets.all(15),
@@ -93,7 +91,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Padding(padding: EdgeInsets.only(left: 15)),
                               Text(
-                                "Data Supplier",
+                                "Data Leveransir",
                                 style: TextStyle(
                                     fontSize: 15,
                                     color: Colors.white,
@@ -136,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                             Padding(padding: EdgeInsets.only(left: 15)),
                             Text(
-                              "Data Customer",
+                              "Data Pelanggan",
                               style: TextStyle(
                                   fontSize: 15,
                                   color: Colors.white,

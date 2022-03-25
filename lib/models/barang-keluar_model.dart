@@ -35,8 +35,6 @@ class Data {
   int? hargaSatuan;
   String? tujuan;
   String? tglPengiriman;
-  Null? createdAt;
-  Null? updatedAt;
 
   Data(
       {this.id,
@@ -45,9 +43,7 @@ class Data {
       this.jumlahPengiriman,
       this.hargaSatuan,
       this.tujuan,
-      this.tglPengiriman,
-      this.createdAt,
-      this.updatedAt});
+      this.tglPengiriman});
 
   Data.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -57,8 +53,6 @@ class Data {
     hargaSatuan = json['harga_satuan'];
     tujuan = json['tujuan'];
     tglPengiriman = json['tgl_pengiriman'];
-    createdAt = json['created_at'];
-    updatedAt = json['updated_at'];
   }
 
   Map<String, dynamic> toJson() {
@@ -70,8 +64,6 @@ class Data {
     data['harga_satuan'] = this.hargaSatuan;
     data['tujuan'] = this.tujuan;
     data['tgl_pengiriman'] = this.tglPengiriman;
-    data['created_at'] = this.createdAt;
-    data['updated_at'] = this.updatedAt;
     return data;
   }
 }

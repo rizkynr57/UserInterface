@@ -1,9 +1,9 @@
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/get_rx/get_rx.dart';
-import 'package:ujikom/services/barang-masuk_service.dart';
+import 'package:ujikom/services/barangMasuk_service.dart';
 import '../models/barang-masuk_model.dart';
 
-class SupplierController extends GetxController {
+class BarangMasukController extends GetxController {
   var barangMasukList = RxList<Data>();
   var isLoading = true.obs;
 

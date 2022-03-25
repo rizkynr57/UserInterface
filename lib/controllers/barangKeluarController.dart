@@ -1,6 +1,6 @@
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/get_rx/get_rx.dart';
-import 'package:ujikom/services/barang-keluar_service.dart';
+import 'package:ujikom/services/barangKeluar_service.dart';
 import '../models/barang-keluar_model.dart';
 
 class BarangKeluarController extends GetxController {

@@ -1,6 +1,9 @@
 import 'dart:ui';
+import 'package:get/instance_manager.dart';
 import 'home_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../controllers/supplierController.dart';
 
 class DataSupplier extends StatelessWidget {
   @override
@@ -43,11 +46,15 @@ class DataSupplier extends StatelessWidget {
                     DataRow(
                       cells: [
                         DataCell(Text("1")),
-                        DataCell(Text("SP9383")),
-                        DataCell(Text("RzQ")),
-                        DataCell(Text("Bandung")),
-                        DataCell(Text("9339455")),
+                        DataCell(Text("SPR001")),
+                        DataCell(Text("Rico")),
+                        DataCell(Text("093213211")),
                         DataCell(Text("PT")),
+                        // DataCell(Text(supplierController.supplierList[index].kode.toString())),
+                        // DataCell(Text(supplierController.supplierList[index].namaSupplier.toString())),
+                        // DataCell(Text(supplierController.supplierList[index].alamat.toString())),
+                        // DataCell(Text(supplierController.supplierList[index].noTelp.toString())),
+                        // DataCell(Text(supplierController.supplierList[index].namaPerusahaan.toString())),
                       ],
                     ),
                   ],

@@ -1,10 +1,14 @@
 import 'dart:ui';
 import 'home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+
+import '../controllers/barangMasukController.dart';
 
 class DataBarangMasuk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final BarangMasukController barangMasukController = Get.put(BarangMasukController());
     return MaterialApp(
       home: Scaffold(
         body: ListView(

@@ -42,12 +42,13 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         Text("Rizky Nurahman",
                              style: TextStyle(
-                               fontSize: 18,
+                               fontSize: 22,
+                               letterSpacing: 3,
                                color: Colors.white,
                                fontWeight: FontWeight.bold,
                              ),
                             ),
-                        Padding(padding: EdgeInsets.only(top: 3.3)),
+                            SizedBox(height: 5),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
@@ -67,6 +68,7 @@ class ProfileScreen extends StatelessWidget {
                                 color: Colors.black.withOpacity(0.3),
                               ),
                               ),
+                              Padding(padding: EdgeInsets.only(left: 5)),
                               Container(
                                 alignment: Alignment.center,
                                 width: 100,
@@ -97,6 +99,14 @@ class ProfileScreen extends StatelessWidget {
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: Colors.white,
+                boxShadow: [
+                    BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 3,
+                              blurRadius: 5,
+                              offset: Offset(0, 3),
+                            ),
+                          ],
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
