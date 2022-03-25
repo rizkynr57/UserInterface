@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '../models/barang-masuk_model.dart';
 
 class BarangMasukService {
-  static Future<BarangMasukModel> fetchArtikelData() async {
+  static Future<BarangMasukModel> fetchBarangMasukData() async {
     final response = await http
         .get(Uri.parse('https://rizkyn-ujikom.herokuapp.com/api/barang-masuk'));
 
