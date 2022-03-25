@@ -10,13 +10,13 @@ class SupplierController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    fetchUserData();
+    fetchSupplierData();
   }
 
-  void fetchUserData() async {
+  void fetchSupplierData() async {
     try {
       isLoading(true);
-      var supplier = await SupplierService.fetchArtikelData();
+      var supplier = await SupplierService.fetchSupplierData();
       supplierList.value = supplier.data as List<Data>;
       update();
     } finally {
