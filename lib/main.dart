@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreenView(
         navigateRoute: MainScreen(),
         duration: 4000,
-        imageSize: 130,
+        imageSize: 150,
         imageSrc: "assets/img/logoprofil.png",
         backgroundColor: Colors.white,
         text: "Pengadaan Barang",

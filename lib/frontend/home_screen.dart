@@ -21,7 +21,6 @@ class HomeScreen extends StatelessWidget {
                 height: 180,
                 child: Column(
                   children: [
-                    Padding(padding: EdgeInsets.only(top: 20)),
                     ClipRRect(
                       child: BackdropFilter(
                         filter: new ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
@@ -103,8 +102,12 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 15)),
-                    Container(
+                    SizedBox(height: 15),
+                    GestureDetector(
+                      onTap:() {
+                        Get.to(DataCustomer());
+                      },
+                      child: Container(
                       padding: EdgeInsets.all(15),
                       width: 350,
                       height: 100,
@@ -145,50 +148,60 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 15)),
-                    Container(
-                      padding: EdgeInsets.all(15),
-                      width: 350,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 1,
-                            blurRadius: 2,
-                            offset: Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: Container(
-                        width: 300,
-                        height: 50,
-                        color: Colors.purple,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.card_membership_rounded,
-                              size: 50,
-                              color: Colors.purpleAccent,
-                            ),
-                            Padding(padding: EdgeInsets.only(left: 15)),
-                            Text(
-                              "Data Barang",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontStyle: FontStyle.italic),
-                            ),
-                          ],
-                        ),
-                      ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 15)),
-                    Container(
+                    SizedBox(height: 15),
+                    // GestureDetector(
+                    //   onTap: () {
+                    //     Get.to(Barang());
+                    //   },
+                    //   child: Container(
+                    //   padding: EdgeInsets.all(15),
+                    //   width: 350,
+                    //   height: 100,
+                    //   decoration: BoxDecoration(
+                    //     borderRadius: BorderRadius.circular(20),
+                    //     color: Colors.white,
+                    //     boxShadow: [
+                    //       BoxShadow(
+                    //         color: Colors.grey.withOpacity(0.5),
+                    //         spreadRadius: 1,
+                    //         blurRadius: 2,
+                    //         offset: Offset(0, 3),
+                    //       ),
+                    //     ],
+                    //   ),
+                    //   child: Container(
+                    //     width: 300,
+                    //     height: 50,
+                    //     color: Colors.purple,
+                    //     child: Row(
+                    //       mainAxisAlignment: MainAxisAlignment.center,
+                    //       children: [
+                    //         Icon(
+                    //           Icons.card_membership_rounded,
+                    //           size: 50,
+                    //           color: Colors.purpleAccent,
+                    //         ),
+                    //         Padding(padding: EdgeInsets.only(left: 15)),
+                    //         Text(
+                    //           "Data Barang",
+                    //           style: TextStyle(
+                    //               fontSize: 15,
+                    //               color: Colors.white,
+                    //               fontWeight: FontWeight.bold,
+                    //               fontStyle: FontStyle.italic),
+                    //         ),
+                    //       ],
+                    //     ),
+                    //   ),
+                    // ),
+                    // ),
+                    SizedBox(height: 15),
+                    GestureDetector(
+                      onTap: () {
+                        Get.to(BarangMasuk());
+                      },
+                      child: Container(
                       padding: EdgeInsets.all(15),
                       width: 350,
                       height: 100,
@@ -229,8 +242,13 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 7)),
-                    Container(
+                    ),
+                    SizedBox(height: 15),
+                    GestureDetector(
+                      onTap: () {
+                        Get.to(BarangKeluar());
+                      },
+                      child: Container(
                       padding: EdgeInsets.all(15),
                       width: 350,
                       height: 100,
@@ -271,13 +289,14 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ],
-                ),
-              )
-            ],
-          ),
+                  ),
+                ],
+              ),
+            )
+          ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }

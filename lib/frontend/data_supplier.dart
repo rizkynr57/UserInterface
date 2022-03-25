@@ -1,8 +1,6 @@
 import 'dart:ui';
-import 'package:get/instance_manager.dart';
 import 'home_screen.dart';
 import 'package:flutter/material.dart';
-
 import '../controllers/supplierController.dart';
 
 class DataSupplier extends StatelessWidget {
