@@ -1,10 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:ujikom/about_screen.dart';
-import 'package:ujikom/data_customer.dart';
-import 'package:ujikom/barang_masuk.dart';
-import 'package:ujikom/barang_keluar.dart';
+import 'package:ujikom/frontend/about_screen.dart';
+import 'package:ujikom/frontend/data_customer.dart';
+import 'package:ujikom/frontend/barang_masuk.dart';
+import 'package:ujikom/frontend/barang_keluar.dart';
 import 'data_supplier.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,12 +20,11 @@ class HomeScreen extends StatelessWidget {
                 height: 180,
                 child: Column(
                   children: [
-                    Padding(padding: EdgeInsets.only(top: 50)),
+                    Padding(padding: EdgeInsets.only(top: 20)),
                     ClipRRect(
                       child: BackdropFilter(
                         filter: new ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
                         child: Container(
-                          width: 600,
                           height: 120,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
@@ -90,7 +89,7 @@ class HomeScreen extends StatelessWidget {
                               Icon(
                                 Icons.person,
                                 size: 50,
-                                color: Colors.grey,
+                                color: Colors.lightGreenAccent,
                               ),
                               Padding(padding: EdgeInsets.only(left: 15)),
                               Text(
@@ -133,11 +132,53 @@ class HomeScreen extends StatelessWidget {
                             Icon(
                               Icons.people_alt_rounded,
                               size: 50,
-                              color: Colors.grey,
+                              color: Colors.lightBlueAccent,
                             ),
                             Padding(padding: EdgeInsets.only(left: 15)),
                             Text(
                               "Data Customer",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 15)),
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      width: 350,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 1,
+                            blurRadius: 2,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
+                      ),
+                      child: Container(
+                        width: 300,
+                        height: 50,
+                        color: Colors.purple,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.card_membership_rounded,
+                              size: 50,
+                              color: Colors.purpleAccent,
+                            ),
+                            Padding(padding: EdgeInsets.only(left: 15)),
+                            Text(
+                              "Data Barang",
                               style: TextStyle(
                                   fontSize: 15,
                                   color: Colors.white,
@@ -175,7 +216,7 @@ class HomeScreen extends StatelessWidget {
                             Icon(
                               Icons.arrow_downward_rounded,
                               size: 50,
-                              color: Colors.grey,
+                              color: Colors.redAccent,
                             ),
                             Padding(padding: EdgeInsets.only(left: 15)),
                             Text(
@@ -217,7 +258,7 @@ class HomeScreen extends StatelessWidget {
                             Icon(
                               Icons.arrow_upward_outlined,
                               size: 50,
-                              color: Colors.grey,
+                              color: Colors.yellowAccent,
                             ),
                             Padding(padding: EdgeInsets.only(left: 15)),
                             Text(

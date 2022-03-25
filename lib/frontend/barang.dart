@@ -1,8 +1,6 @@
-import 'dart:ui';
-import 'home_screen.dart';
 import 'package:flutter/material.dart';
-​
-class DataBarangMasuk extends StatelessWidget {
+
+class Barang extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +12,7 @@ class DataBarangMasuk extends StatelessWidget {
               height: 200,
               child: Container(
                 alignment: Alignment.center,
-                child: Text("Data Barang Masuk"),
+                child: Text("Data Barang"),
               ),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -33,19 +31,23 @@ class DataBarangMasuk extends StatelessWidget {
                   child: DataTable(
                     columns: [
                       DataColumn(label: Text("No")),
-                      DataColumn(label: Text("Nama Supplier")),
                       DataColumn(label: Text("Nama Barang")),
-                      DataColumn(label: Text("Jumlah Masuk")),
-                      DataColumn(label: Text("Tanggal Masuk")),
+                      DataColumn(label: Text("Jenis Barang")),
+                      DataColumn(label: Text("Stok Barang")),
+                      DataColumn(label: Text("Harga Beli")),
+                      DataColumn(label: Text("Harga Jual")),
+                      DataColumn(label: Text("Satuan")),
                     ],
                     rows: [
                       DataRow(
                         cells: [
                           DataCell(Text("1")),
-                          DataCell(Text("Renata")),
                           DataCell(Text("Iphone")),
-                          DataCell(Text("98")),
-                          DataCell(Text("14 Januari")),
+                          DataCell(Text("Elektronik")),
+                          DataCell(Text("321")),
+                          DataCell(Text("4.535.000")),
+                          DataCell(Text("5.734.000")),
+                          DataCell(Text("Unit")),
                         ],
                       ),
                     ],

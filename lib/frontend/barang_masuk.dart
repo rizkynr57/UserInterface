@@ -1,6 +1,8 @@
+import 'dart:ui';
+import 'home_screen.dart';
 import 'package:flutter/material.dart';
-​
-class Barang extends StatelessWidget {
+
+class DataBarangMasuk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,7 +14,7 @@ class Barang extends StatelessWidget {
               height: 200,
               child: Container(
                 alignment: Alignment.center,
-                child: Text("Data Barang"),
+                child: Text("Data Barang Masuk"),
               ),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -31,23 +33,19 @@ class Barang extends StatelessWidget {
                   child: DataTable(
                     columns: [
                       DataColumn(label: Text("No")),
+                      DataColumn(label: Text("Nama Supplier")),
                       DataColumn(label: Text("Nama Barang")),
-                      DataColumn(label: Text("Jenis Barang")),
-                      DataColumn(label: Text("Stok Barang")),
-                      DataColumn(label: Text("Harga Beli")),
-                      DataColumn(label: Text("Harga Jual")),
-                      DataColumn(label: Text("Satuan")),
+                      DataColumn(label: Text("Jumlah Masuk")),
+                      DataColumn(label: Text("Tanggal Masuk")),
                     ],
                     rows: [
                       DataRow(
                         cells: [
                           DataCell(Text("1")),
+                          DataCell(Text("Renata")),
                           DataCell(Text("Iphone")),
-                          DataCell(Text("Elektronik")),
-                          DataCell(Text("321")),
-                          DataCell(Text("4.535.000")),
-                          DataCell(Text("5.734.000")),
-                          DataCell(Text("Unit")),
+                          DataCell(Text("98")),
+                          DataCell(Text("14 Januari")),
                         ],
                       ),
                     ],
