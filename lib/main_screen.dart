@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'frontend/home_screen.dart';
 import 'frontend/profile_screen.dart';
-import 'frontend/about_screen.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -13,7 +12,6 @@ class _MainScreenState extends State<MainScreen> {
 
   List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    AboutScreen(),
     ProfileScreen(),
   ];
   @override
@@ -29,10 +27,6 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Halaman Utama',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.assignment),
-            label: 'Tentang',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
