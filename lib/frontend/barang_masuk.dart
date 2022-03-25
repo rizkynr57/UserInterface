@@ -6,6 +6,7 @@ import 'package:get/instance_manager.dart';
 import '../controllers/barangMasukController.dart';
 
 class BarangMasuk extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     final BarangMasukController barangMasukController = Get.put(BarangMasukController());

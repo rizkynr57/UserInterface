@@ -126,7 +126,7 @@ class ProfileScreen extends StatelessWidget {
                   Padding(padding: EdgeInsets.only(top: 15)),
                   Container(
                     width: 350,
-                    child: Text('''Saya adalah seorang pelajar SMK ASSALAAM BANDUNG, saya lahir di bandung 10 Januari 2003. Saya sangat berkeinginan kuat dalam menjadi seorang programmer terutama yang bertugas dalam mendesain website maupun aplikasi android. Saya memang lebih handal membuat User Interface ketimbang User Experience.
+                    child: Text('''   Saya adalah seorang pelajar SMK ASSALAAM BANDUNG, saya lahir di bandung 10 Januari 2003. Saya sangat berkeinginan kuat dalam menjadi seorang programmer terutama yang bertugas dalam mendesain website maupun aplikasi android. Saya memang lebih handal membuat User Interface ketimbang User Experience.
                     ''', textAlign: TextAlign.justify),
                   ),
                 ],

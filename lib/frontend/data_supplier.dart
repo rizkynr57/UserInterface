@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../controllers/supplierController.dart';
 
 class DataSupplier extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

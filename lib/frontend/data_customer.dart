@@ -7,6 +7,7 @@ import 'package:get/instance_manager.dart';
 import '../controllers/customerController.dart';
 
 class DataCustomer extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

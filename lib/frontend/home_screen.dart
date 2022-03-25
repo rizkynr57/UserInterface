@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ujikom/frontend/data_supplier.dart';
 import 'package:ujikom/frontend/data_customer.dart';
-import 'package:ujikom/frontend/barang.dart';
 import 'package:ujikom/frontend/barang_masuk.dart';
 import 'package:ujikom/frontend/barang_keluar.dart';
 
 class HomeScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -149,53 +149,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     ),
-                    SizedBox(height: 15),
-                    // GestureDetector(
-                    //   onTap: () {
-                    //     Get.to(Barang());
-                    //   },
-                    //   child: Container(
-                    //   padding: EdgeInsets.all(15),
-                    //   width: 350,
-                    //   height: 100,
-                    //   decoration: BoxDecoration(
-                    //     borderRadius: BorderRadius.circular(20),
-                    //     color: Colors.white,
-                    //     boxShadow: [
-                    //       BoxShadow(
-                    //         color: Colors.grey.withOpacity(0.5),
-                    //         spreadRadius: 1,
-                    //         blurRadius: 2,
-                    //         offset: Offset(0, 3),
-                    //       ),
-                    //     ],
-                    //   ),
-                    //   child: Container(
-                    //     width: 300,
-                    //     height: 50,
-                    //     color: Colors.purple,
-                    //     child: Row(
-                    //       mainAxisAlignment: MainAxisAlignment.center,
-                    //       children: [
-                    //         Icon(
-                    //           Icons.card_membership_rounded,
-                    //           size: 50,
-                    //           color: Colors.purpleAccent,
-                    //         ),
-                    //         Padding(padding: EdgeInsets.only(left: 15)),
-                    //         Text(
-                    //           "Data Barang",
-                    //           style: TextStyle(
-                    //               fontSize: 15,
-                    //               color: Colors.white,
-                    //               fontWeight: FontWeight.bold,
-                    //               fontStyle: FontStyle.italic),
-                    //         ),
-                    //       ],
-                    //     ),
-                    //   ),
-                    // ),
-                    // ),
                     SizedBox(height: 15),
                     GestureDetector(
                       onTap: () {
