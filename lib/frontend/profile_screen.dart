@@ -6,50 +6,122 @@ class ProfileScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          child: ListView(
-            children: [
-              Container(
-                child: Text(
-                  "Profile Details",
-                  style: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 20),
-              ),
-              Container(
-                padding: EdgeInsets.all(5),
-                width: 150,
-                height: 150,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  gradient: LinearGradient(
-                    colors: <Color>[Colors.lightGreenAccent, Colors.lightBlue],
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 5,
-                      blurRadius: 7,
-                      offset: Offset(0, 3),
-                    )
-                  ],
-                ),
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/img/logologo.png"),
-                        fit: BoxFit.cover),
-                  ),
-                ),
-              ),
-            ],
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.lightBlue,
+                Colors.lightGreenAccent,
+              ],
+            ),
           ),
+        child: ListView(
+          children:[
+            Container(
+              width: 400.0,
+              height: 300.0,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 150,
+                    height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100),
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2017/12/28/12/31/sketch-3045125_640.jpg"),
+                        ),
+                      ),
+                    ),
+                  Container(
+                    height: 110,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Text("Rizky Nurahman",
+                             style: TextStyle(
+                               fontSize: 18,
+                               color: Colors.white,
+                               fontWeight: FontWeight.bold,
+                             ),
+                            ),
+                        Padding(padding: EdgeInsets.only(top: 3.3)),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              alignment: Alignment.center,
+                              width: 100,
+                              height: 30,
+                              child: Text("Student",
+                                          style: TextStyle(
+                                            fontSize: 11,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                          ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(19),
+                                color: Colors.black.withOpacity(0.3),
+                              ),
+                              ),
+                              Container(
+                                alignment: Alignment.center,
+                                width: 100,
+                                height: 30,
+                                child: Text("Developer",
+                                            style: TextStyle(
+                                              fontSize: 11,
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold
+                                            ),
+                                           ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(19),
+                                  color: Colors.black.withOpacity(0.3),
+                                ),
+                              ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              width: 400,
+              height: 450,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+              ),
+              child: Column(
+                children: [
+                  Text("About",
+                       style: TextStyle(
+                         fontSize: 21.0,
+                         fontWeight: FontWeight.bold,
+                       ),
+                    ),
+                  Padding(padding: EdgeInsets.only(top: 15)),
+                  Container(
+                    alignment: Alignment.center,
+                    child: Text("Ini adalah deskripsi", textAlign: TextAlign.justify),
+                  ),
+                ],
+              ),
+            ),
+           ],
+          ),
+         ),
         ),
-      ),
-    );
-  }
-}
+       );
+      }
+     }
