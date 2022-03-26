@@ -1,6 +1,11 @@
 import 'package:ujikom/main_screen.dart';
+import 'package:ujikom/frontend/data_supplier';
+import 'package:ujikom/frontend/data_customer';
+import 'package:ujikom/frontend/barang_masuk.dart';
+import 'package:ujikom/frontend/barang_keluar.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
   runApp(MyApp());
