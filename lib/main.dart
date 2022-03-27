@@ -7,6 +7,8 @@ import 'package:splash_screen_view/SplashScreenView.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'controller_bindings.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -18,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      initialBinding: ControllerBindings(),
       home: SplashScreenView(
         navigateRoute: MainScreen(),
         duration: 4000,
