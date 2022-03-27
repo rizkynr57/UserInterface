@@ -1,5 +1,4 @@
-import 'dart:ui';
-import 'home_screen.dart';
+import 'dart:ui'
 import 'package:flutter/material.dart';
 import '../controllers/supplierController.dart';
 
@@ -7,6 +6,7 @@ class DataSupplier extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    // final SupplierController supplierController = Get.put(SupplierController());
     return MaterialApp(
       home: Scaffold(
         body: ListView(
@@ -28,6 +28,10 @@ class DataSupplier extends StatelessWidget {
                 ),
               ),
             ),
+           // ListView.builder(
+           // itemCount: supplierController.supplierList.length;
+           // itemBuilder: (content, index) {
+           // return
             SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: SingleChildScrollView(
@@ -59,6 +63,7 @@ class DataSupplier extends StatelessWidget {
                     ),
                   ],
                 ),
+          //     }
               ),
             ),
           ],
