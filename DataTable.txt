@@ -1,0 +1,51 @@
+class _TestPageState extends State<TestPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Fetch Data Table Example'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            FutureBuilder<List<Employees>>(
+              initialData: const <Employees>[],
+              future: fetchResults(),
+              builder: (context, snapshot) {
+                if (snapshot.hasError ||
+                    snapshot.data == null ||
+                    snapshot.connectionState == ConnectionState.waiting) {
+                  return const CircularProgressIndicator();
+                }
+
+                return DataTable(
+                  columns: const [
+                    DataColumn(label: Text('ID')),
+                    DataColumn(label: Text('Name')),
+                    DataColumn(label: Text('Email')),
+                  ],
+                  rows: List.generate(
+                    snapshot.data!.length,
+                    (index) {
+                      var emp = snapshot.data![index];
+                      return DataRow(cells: [
+                        DataCell(
+                          Text(emp.id.toString()),
+                        ),
+                        DataCell(
+                          Text(emp.name),
+                        ),
+                        DataCell(
+                          Text(emp.email),
+                        ),
+                      ]);
+                    },
+                  ).toList(),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }}
