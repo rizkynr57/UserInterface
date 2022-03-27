@@ -10,6 +10,7 @@ class DataCustomer extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
+    // final CustomerController customerController = Get.put(CustomerController());
     return MaterialApp(
       home: Scaffold(
         body: ListView(
@@ -31,6 +32,10 @@ class DataCustomer extends StatelessWidget {
                 ),
               ),
             ),
+           // ListView.builder(
+           // itemCount: supplierController.supplierList.length;
+           // itemBuilder: (content, index) {
+           // return
             SingleChildScrollView(
                   scrollDirection: Axis.vertical,
                   child: SingleChildScrollView(
@@ -62,9 +67,9 @@ class DataCustomer extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ),
-            ),          
-          ],
+                 ),
+              ),          
+           ],
         ),
       ),
     );
