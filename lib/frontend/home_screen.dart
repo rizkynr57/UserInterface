@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:ujikom/frontend/data_supplier.dart';
 import 'package:ujikom/frontend/data_customer.dart';
 import 'package:ujikom/frontend/barang_masuk.dart';
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       home: Scaffold(
         body: Container(
           child: ListView(
