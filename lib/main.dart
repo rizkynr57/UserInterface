@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialBinding: ControllerBindings(),
+      initialBinding: RootBindings(),
       home: SplashScreenView(
         navigateRoute: MainScreen(),
         duration: 4000,
