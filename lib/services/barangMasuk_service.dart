@@ -9,7 +9,7 @@ class BarangMasukService {
     final response = await http
         .get(Uri.parse('https://rizkyn-ujikom.herokuapp.com/api/barang-masuk'));
 
-    if (response.statusCode == 200) {
+    if (response.statusCode == 201) {
       var data = response.body;
       return BarangMasukModel.fromJson(jsonDecode(data));
     } else {
