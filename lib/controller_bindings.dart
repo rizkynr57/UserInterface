@@ -5,7 +5,7 @@ import 'controllers/customerController.dart';
 import 'controllers/barangMasukController.dart';
 import 'controllers/barangKeluarController.dart';
 
-class ControllerBindings extends Bindings {
+class RootBindings extends Bindings {
   @override
   void dependencies() {
     Get.put<SupplierController>(SupplierController());
