@@ -9,7 +9,7 @@ class CustomerService {
     final response = await http
         .get(Uri.parse('https://rizkyn-ujikom.herokuapp.com/api/customer'));
 
-    if (response.statusCode == 200) {
+    if (response.statusCode == 201) {
       var data = response.body;
       return CustomerModel.fromJson(jsonDecode(data));
     } else {
