@@ -47,6 +47,7 @@ class DataSupplier extends StatelessWidget {
                         DataCell(Text("1")),
                         DataCell(Text("SPR001")),
                         DataCell(Text("Rico")),
+                        DataCell(Text("Bandung")),
                         DataCell(Text("093213211")),
                         DataCell(Text("PT")),
                         // DataCell(Text(supplierController.supplierList[index].kode.toString())),
