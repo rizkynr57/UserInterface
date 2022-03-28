@@ -2,7 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 
-import '../controllers/barangKeluarController.dart;
+import '../controllers/barangKeluarController.dart';
 
 class BarangKeluar extends StatelessWidget {
     
