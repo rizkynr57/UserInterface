@@ -29,9 +29,9 @@ class DataSupplier extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: <Color>[
-                    Colors.red,
+                    Colors.green,
                     Colors.white,
-                    Colors.red,
+                    Colors.green,
                   ],
                 ),
               ),
