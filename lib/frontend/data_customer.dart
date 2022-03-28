@@ -22,7 +22,7 @@ class DataCustomer extends StatelessWidget {
               height: 200,
               child: Container(
                 alignment: Alignment.center,
-                child: Text("Data Customer"),
+                child: Text("Data Pelanggan"),
               ),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
