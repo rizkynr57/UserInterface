@@ -28,9 +28,9 @@ class BarangKeluar extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: <Color>[
-                    Colors.red,
+                    Colors.yellow,
                     Colors.white,
-                    Colors.red,
+                    Colors.yellow,
                   ],
                 ),
               ),
