@@ -27,9 +27,9 @@ class DataCustomer extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: <Color>[
-                    Colors.red,
+                    Colors.blue,
                     Colors.white,
-                    Colors.red,
+                    Colors.blue,
                   ],
                 ),
               ),
