@@ -1,13 +1,21 @@
 import 'dart:ui';
-import 'home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+
+import '../controllers/barangKeluarController.dart;
 
 class BarangKeluar extends StatelessWidget {
     
   @override
   Widget build(BuildContext context) {
+    final BarangKeluarController barangKeluarController = Get.put(BarangKeluarController());
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
         body: ListView(
           children: [
             Container(
