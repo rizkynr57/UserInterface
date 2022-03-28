@@ -34,6 +34,8 @@ class Data {
   String? alamat;
   String? noTelp;
   String? namaPerusahaan;
+  Null? createdAt;
+  Null? updatedAt;
 
   Data(
       {this.id,
@@ -41,7 +43,9 @@ class Data {
       this.namaSupplier,
       this.alamat,
       this.noTelp,
-      this.namaPerusahaan});
+      this.namaPerusahaan,
+      this.createdAt,
+      this.updatedAt});
 
   Data.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -50,6 +54,8 @@ class Data {
     alamat = json['alamat'];
     noTelp = json['no_telp'];
     namaPerusahaan = json['nama_perusahaan'];
+    createdAt = json['created_at'];
+    updatedAt = json['updated_at'];
   }
 
   Map<String, dynamic> toJson() {
@@ -60,6 +66,8 @@ class Data {
     data['alamat'] = this.alamat;
     data['no_telp'] = this.noTelp;
     data['nama_perusahaan'] = this.namaPerusahaan;
+    data['created_at'] = this.createdAt;
+    data['updated_at'] = this.updatedAt;
     return data;
   }
 }
