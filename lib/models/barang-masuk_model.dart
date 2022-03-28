@@ -33,13 +33,17 @@ class Data {
   int? idBarang;
   int? jumlahPemasukan;
   String? tglMasuk;
+  Null? createdAt;
+  Null? updatedAt;
 
   Data(
       {this.id,
       this.idSupplier,
       this.idBarang,
       this.jumlahPemasukan,
-      this.tglMasuk});
+      this.tglMasuk,
+      this.createdAt,
+      this.updatedAt});
 
   Data.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -47,6 +51,8 @@ class Data {
     idBarang = json['id_barang'];
     jumlahPemasukan = json['jumlah_pemasukan'];
     tglMasuk = json['tgl_masuk'];
+    createdAt = json['created_at'];
+    updatedAt = json['updated_at'];
   }
 
   Map<String, dynamic> toJson() {
@@ -56,6 +62,8 @@ class Data {
     data['id_barang'] = this.idBarang;
     data['jumlah_pemasukan'] = this.jumlahPemasukan;
     data['tgl_masuk'] = this.tglMasuk;
+    data['created_at'] = this.createdAt;
+    data['updated_at'] = this.updatedAt;
     return data;
   }
 }
