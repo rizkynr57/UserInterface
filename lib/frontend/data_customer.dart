@@ -1,6 +1,3 @@
-import 'package:ujikom/controllers/customerController.dart';
-
-import 'home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 
@@ -10,9 +7,14 @@ class DataCustomer extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    // final CustomerController customerController = Get.put(CustomerController());
+    final CustomerController customerController = Get.put(CustomerController());
     return MaterialApp(
       home: Scaffold(
+       appBar: AppBar(
+         leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+       ),
         body: ListView(
           children: [
             Container(
@@ -32,10 +34,6 @@ class DataCustomer extends StatelessWidget {
                 ),
               ),
             ),
-           // ListView.builder(
-           // itemCount: supplierController.supplierList.length;
-           // itemBuilder: (content, index) {
-           // return
             SingleChildScrollView(
                   scrollDirection: Axis.vertical,
                   child: SingleChildScrollView(
