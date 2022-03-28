@@ -1,14 +1,22 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
+
 import '../controllers/supplierController.dart';
 
 class DataSupplier extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    // final SupplierController supplierController = Get.put(SupplierController());
+    final SupplierController supplierController = Get.put(SupplierController());
     return MaterialApp(
       home: Scaffold(
+       appBar: AppBar(
+          leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+       ),
         body: ListView(
           children: [
             Container(
@@ -28,10 +36,6 @@ class DataSupplier extends StatelessWidget {
                 ),
               ),
             ),
-           // ListView.builder(
-           // itemCount: supplierController.supplierList.length;
-           // itemBuilder: (content, index) {
-           // return
             SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: SingleChildScrollView(
@@ -63,7 +67,6 @@ class DataSupplier extends StatelessWidget {
                     ),
                   ],
                 ),
-          //     }
               ),
             ),
           ],
