@@ -46,40 +46,80 @@ class DataSupplier extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Text(
+                           Container(
+                             width: 400,
+                             height: 100,
+                             decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: Colors.black),
+                             ),
+                             child: Text(
                               "Kode : " +
                                   supplierController.supplierList[index].kode
                                       .toString(),
                               style: TextStyle(backgroundColor: Colors.amber),
                             ),
-                            Text(
+                           ),
+                           Container(
+                             width: 400,
+                             height: 100,
+                             decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: Colors.black),
+                             ),
+                             child: Text(
                                 "Nama : " +
                                     supplierController
                                         .supplierList[index].namaSupplier
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
-                             Text(
+                             ),
+                             Container(
+                               width: 400,
+                               height: 100,
+                               decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(color: Colors.black),
+                             ),
+                             child: Text(
                                 "Alamat : " +
                                     supplierController
                                         .supplierList[index].alamat
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
-                             Text(
+                             ),
+                             Container(
+                                width: 400,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                   borderRadius: BorderRadius.circular(20),
+                                   border: Border.all(color: Colors.black),
+                             ),
+                             child: Text(
                                 "No Telepon : " +
                                     supplierController
                                         .supplierList[index].noTelp
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
-                              Text(
+                              ),
+                              Container(
+                                 width: 400,
+                                 height: 100,
+                                 decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    border: Border.all(color: Colors.black),
+                             ),
+                              child: Text(
                                 "Nama Perusahaan : " +
                                     supplierController
                                         .supplierList[index].namaPerusahaan
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
+                              ),
                           ],
                         ),
                       ),
