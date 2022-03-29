@@ -55,28 +55,28 @@ class DataSupplier extends StatelessWidget {
                             Text(
                                 "Nama : " +
                                     supplierController
-                                        .suppliefList[index].namaSupplier
+                                        .supplierList[index].namaSupplier
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
                              Text(
                                 "Alamat : " +
                                     supplierController
-                                        .suppliefList[index].alamat
+                                        .supplierList[index].alamat
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
                              Text(
                                 "No Telepon : " +
                                     supplierController
-                                        .suppliefList[index].noTelp
+                                        .supplierList[index].noTelp
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
                               Text(
                                 "Nama Perusahaan : " +
                                     supplierController
-                                        .suppliefList[index].namaPerusahaan
+                                        .supplierList[index].namaPerusahaan
                                         .toString(),
                                 style:
                                     TextStyle(backgroundColor: Colors.amber)),
