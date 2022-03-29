@@ -24,7 +24,7 @@ class DataCustomer extends StatelessWidget {
         centerTitle: true,
       ),
       body: Obx(
-        () => supplierController.isLoading()
+        () => customerController.isLoading()
             ? Center(child: const CircularProgressIndicator())
             : Center(
                 child: ListView.builder(
