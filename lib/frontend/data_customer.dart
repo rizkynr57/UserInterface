@@ -46,40 +46,80 @@ class DataCustomer extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Text(
+                           Container(
+                             width: 400,
+                             height: 100,
+                             decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: Colors.black),
+                             ),
+                            child: Text(
                               "Kode : " +
                                   customerController.customerList[index].kode
                                       .toString(),
-                              style: TextStyle(backgroundColor: Colors.amber),
+                              style: TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
                             ),
-                            Text(
+                           ),
+                            Container(
+                             width: 400,
+                             height: 100,
+                             decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: Colors.black),
+                             ),
+                            child: Text(
                                 "Nama : " +
                                     customerController
                                         .customerList[index].nama
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
-                             Text(
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
+                             ),
+                             Container(
+                               width: 400,
+                               height: 100,
+                               decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(color: Colors.black),
+                               ),
+                               child: Text(
                                 "Alamat : " +
                                     customerController
                                         .custometList[index].alamat
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
-                             Text(
-                                "Email: " +
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
+                             ),
+                             Container(
+                               width: 400,
+                               height: 100,
+                               decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(color: Colors.black),
+                               ),
+                               child: Text(
+                                "Email : " +
                                     customerController
                                         .customerList[index].email
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
-                              Text(
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
+                              ),
+                             Container(
+                               width: 400,
+                               height: 100,
+                               decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(color: Colors.black),
+                             ),
+                              child: Text(
                                 "No Telepon : " +
                                     customerController
                                         .customerList[index].telepon
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
+                              ),
                           ],
                         ),
                       ),
