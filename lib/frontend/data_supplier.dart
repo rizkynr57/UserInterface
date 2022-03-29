@@ -73,7 +73,7 @@ class DataSupplier extends StatelessWidget {
                                         .supplierList[index].namaSupplier
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
                              ),
                              Container(
                                width: 400,
@@ -88,7 +88,7 @@ class DataSupplier extends StatelessWidget {
                                         .supplierList[index].alamat
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
                              ),
                              Container(
                                 width: 400,
@@ -103,7 +103,7 @@ class DataSupplier extends StatelessWidget {
                                         .supplierList[index].noTelp
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
                               ),
                               Container(
                                  width: 400,
@@ -118,7 +118,7 @@ class DataSupplier extends StatelessWidget {
                                         .supplierList[index].namaPerusahaan
                                         .toString(),
                                 style:
-                                    TextStyle(backgroundColor: Colors.amber)),
+                                    TextStyle(fontSize: 15, color: Colors.white, fontweight: FontWeight.bold)),
                               ),
                           ],
                         ),
