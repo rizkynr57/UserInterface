@@ -34,8 +34,8 @@ class Data {
   String? alamat;
   String? noTelp;
   String? namaPerusahaan;
-  Null? createdAt;
-  Null? updatedAt;
+  String? createdAt;
+  String? updatedAt;
 
   Data(
       {this.id,
