@@ -34,8 +34,8 @@ class Data {
   String? alamat;
   String? email;
   String? telepon;
-  Null? createdAt;
-  Null? updatedAt;
+  String? createdAt;
+  String? updatedAt;
 
   Data(
       {this.id,
